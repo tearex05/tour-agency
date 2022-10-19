@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/tour-agency/static/css/main.02893a0f.css",
+    "main.js": "/tour-agency/static/js/main.8cbd55bf.js",
+    "static/media/bg.jpg": "/tour-agency/static/media/bg.3f0225714f386431502d.jpg",
+    "static/media/img2.jpg": "/tour-agency/static/media/img2.4adc251eccaccf9a1743.jpg",
+    "static/media/img3.jpg": "/tour-agency/static/media/img3.69676587f9b2d2555cdd.jpg",
+    "static/media/img1.jpg": "/tour-agency/static/media/img1.bc0eebd5dfe787130be4.jpg",
+    "index.html": "/tour-agency/index.html",
+    "main.02893a0f.css.map": "/tour-agency/static/css/main.02893a0f.css.map",
+    "main.8cbd55bf.js.map": "/tour-agency/static/js/main.8cbd55bf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02893a0f.css",
+    "static/js/main.8cbd55bf.js"
+  ]
+}
