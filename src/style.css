@@ -1,3 +1,43 @@
+@media (max-width: 480px) {
+  .f-title {
+    margin: 10px 0;
+    font-size: 60px;
+  }
+  .s {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .f-title {
+    margin: 10px 0;
+    font-size: 80px;
+  }
+  .s {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1279px) {
+  .f-title {
+    margin: 10px 0;
+    font-size: 100px;
+  }
+  .s {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .f-title {
+    margin: 10px 0;
+    font-size: 130px;
+  }
+  .s {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Akshar&display=swap");
 * {
   padding: 0;
@@ -6,6 +46,10 @@
   box-sizing: border-box;
   font-family: "Akshar", sans-serif;
   letter-spacing: 5px;
+}
+
+p {
+  letter-spacing: 0;
 }
 
 html,
@@ -133,7 +177,6 @@ body {
 
 .f .f-title {
   margin: 10px 0;
-  font-size: 40px;
 }
 
 .f .f-more {
@@ -170,10 +213,6 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  .s {
-    -ms-grid-columns: (1fr) [1];
-    grid-template-columns: repeat(1, 1fr);
-  }
   .s .s-title {
     -ms-grid-column: 1;
     grid-column: 1/1;
@@ -181,10 +220,6 @@ body {
 }
 
 @media screen and (min-width: 769px) {
-  .s {
-    -ms-grid-columns: (1fr) [2];
-    grid-template-columns: repeat(2, 1fr);
-  }
   .s .s-title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -193,26 +228,10 @@ body {
 }
 
 @media screen and (min-width: 1150px) {
-  .s {
-    -ms-grid-columns: (1fr) [3];
-    grid-template-columns: repeat(3, 1fr);
-  }
   .s .s-title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-column: 1/5;
-  }
-}
-
-@media screen and (min-width: 1500px) {
-  .s {
-    -ms-grid-columns: (1fr) [4];
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .s .s-title {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-    grid-column: 1/7;
   }
 }
 
@@ -277,25 +296,15 @@ body {
   height: 200px;
 }
 
-@-webkit-keyframes rot {
-  from {
-    -webkit-transform: rotateZ(0deg);
-    transform: rotateZ(0deg);
-  }
-  to {
-    -webkit-transform: rotateZ(360deg);
-    transform: rotateZ(360deg);
-  }
-}
-
 @keyframes rot {
-  from {
-    -webkit-transform: rotateZ(0deg);
-    transform: rotateZ(0deg);
+  0% {
+    transform: translateX(0);
   }
-  to {
-    -webkit-transform: rotateZ(360deg);
-    transform: rotateZ(360deg);
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
@@ -303,10 +312,8 @@ body {
   -webkit-animation: loader3 1s ease-in-out forwards;
   animation: loader3 1s ease-in-out forwards;
   width: 100vw;
-  min-height: 80vh;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  margin-top: 100px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -325,9 +332,14 @@ body {
 
 @media screen and (min-width: 769px) {
   .t {
-    -ms-grid-columns: (1fr) [2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr) [1];
+    grid-template-columns: repeat(1, 1fr);
   }
+}
+
+input,
+textarea {
+  outline: none;
 }
 
 .t .t-text {
@@ -341,35 +353,9 @@ body {
   font-size: 30px;
 }
 
-.t .t-img {
-  border-radius: 25px;
-  background-color: aqua;
-  height: 500px;
-  width: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.t .t-img .t-img-title {
-  -webkit-animation: rot 20s infinite linear;
-  animation: rot 20s infinite linear;
-  color: yellow;
-  font-size: 80px;
-  -webkit-transform: rotateZ(45deg);
-  transform: rotateZ(45deg);
-}
-
 .c {
   -webkit-animation: loader2 1s ease-in-out forwards;
   animation: loader2 1s ease-in-out forwards;
-  margin-top: 100px;
   width: 100vw;
   min-height: 60vh;
   background-color: rgba(51, 51, 51, 0.5);

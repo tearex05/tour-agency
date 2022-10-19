@@ -15,7 +15,6 @@ function App() {
         </div>
       </div>
       <div className="s">
-        <h1 className="s-title">Places</h1>
         <div className="card s-1">
           <div className="img img-1"></div>
           <h3>Mountain</h3>
@@ -54,9 +53,6 @@ function App() {
             If you order until Dec 18 you will get{" "}
             <span className="off">200%</span> off{" "}
           </p>
-        </div>
-        <div className="t-img">
-          <h1 className="t-img-title">200%</h1>
         </div>
       </div>
       <div className="c">
